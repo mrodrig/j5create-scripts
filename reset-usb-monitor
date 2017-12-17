@@ -1,0 +1,8 @@
+#/bin/bash
+echo "Resetting j5create USB 3 to HDMI Display(s) by killing the driver processes"
+PROCIDS=$(ps -ef | grep '/usr/local/libexec/MCTTriggerDriver' | grep -v 'grep' | awk -F' ' '{print $2}')
+for proc in $PROCIDS; do
+  echo "Killing process id: $proc"
+  sudo kill $proc
+done
+echo "Please disconnect and reconnect the USB adapter device."
