@@ -1,4 +1,4 @@
-# j5create Scripts for the USB 3.0 to HDMI Adapter
+# j5create Scripts for the USB 3.0 to HDMI Adapter (macOS)
 
 ## reset-usb-monitor
 This script kills the driver used by the adapter.  After running this script, simply unplug and reconnect the USB to HDMI adapter to connect the display again.
